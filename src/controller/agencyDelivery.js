@@ -26,7 +26,7 @@ export const deliveryData = async (req, res) => {
     const mailOptions = {
       from: "polystarnanotech@gmail.com",
       to: recipients,
-      subject: "New Delivery",
+      subject: "Moving meastros: New Delivery",
       html: `
       <p>Sender Name: ${saveDelivery.sender_name}</p>
       <p>Sender Contact: ${saveDelivery.sender_contact}</p>
