@@ -4,7 +4,6 @@ import { transporter } from "../utils";
 export const delivery = async (req, res) => {
   try {
     const formData = req.body;
-    // Save form data to MongoDB
     console.log(formData);
     const delivery = new DeliveryOrderModel(formData);
     const saveDelivery = await delivery.save();

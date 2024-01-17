@@ -4,6 +4,6 @@ import uploads from "../middleware/multer.middleware"
 const deliveryRouter = express.Router()
 
 deliveryRouter.post('/add',uploads, deliveryData)
-deliveryRouter.post('/delivery', delivery)
+deliveryRouter.post('/delivery',uploads, delivery)
 
 export default deliveryRouter
